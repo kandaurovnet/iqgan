@@ -1,0 +1,1061 @@
+
+Learning of stationary lognormal distribution with mean value 1 and sigma value 1
+
+Data bounds: [0. 3.]
+Batch size: 5
+Number of qubits: [2]
+Target relative entropy: 1e-10
+Initial data length: 50
+Initial data: [2.0, 2.0, 2.0, 2.0, 0.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 1.0, 2.0, 0.0, 3.0, 3.0, 1.0, 1.0, 3.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 2.0, 2.0, 2.0, 1.0, 3.0, 2.0, 1.0, 2.0, 3.0, 1.0, 1.0, 1.0, 2.0, 3.0, 1.0, 0.0, 3.0, 2.0, 0.0, 3.0, 3.0, 1.0, 1.0]
+Unknown target probabilities: [0.08449999999999994, 0.42740000000028666, 0.3528600000002121, 0.13523999999999448]
+
+Updating data...
+Old data count:  50
+New data count:  0
+New data:  []
+Processed data count:  50
+Processed grid elements:  [0. 1. 2. 3.]
+Processed data probabilities:  [0.14, 0.34, 0.34, 0.18]
+Unknown real data probabilities:  [0.08449999999999994, 0.42740000000028666, 0.3528600000002121, 0.13523999999999448]
+
+Generator circuit:
+     ┌───┐┌──────────┐   ┌──────────┐   ┌──────────┐
+q_0: ┤ H ├┤ RY(θ[0]) ├─■─┤ RY(θ[2]) ├─■─┤ RY(θ[4]) ├
+     ├───┤├──────────┤ │ ├──────────┤ │ ├──────────┤
+q_1: ┤ H ├┤ RY(θ[1]) ├─■─┤ RY(θ[3]) ├─■─┤ RY(θ[5]) ├
+     └───┘└──────────┘   └──────────┘   └──────────┘
+
+Generator parameters:  [0. 0. 0. 0. 0. 0.]
+Generated probabilities:  [0.25 0.25 0.25 0.25]
+
+Initial relative entropy: 0.0733382906822642
+
+Training...
+
+Generator parameters:  [0. 0. 0. 0. 0. 0.]
+Generated probabilities:  [0.25 0.25 0.25 0.25]
+
+Generator parameters:  [-0.01791374 -0.01795706  0.00959023  0.00520046 -0.01791481 -0.01795725]
+Generated probabilities:  [0.2644913  0.25341435 0.2533317  0.22876265]
+
+Epoch  1
+Loss Discriminator:  0.6931
+Loss Generator:  [0.6957]
+Relative Entropy:  0.0741
+Real Relative Entropy:  0.2056
+----------------------
+
+Generator parameters:  [-0.00587308 -0.0059372   0.02984888  0.01959078 -0.00587607 -0.00593769]
+Generated probabilities:  [0.24350933 0.26236626 0.26227162 0.23185279]
+
+Epoch  2
+Loss Discriminator:  0.6932
+Loss Generator:  [0.6949]
+Relative Entropy:  0.0574
+Real Relative Entropy:  0.1769
+----------------------
+
+Generator parameters:  [0.01200068 0.01200119 0.05170793 0.03585366 0.0120037  0.01200166]
+Generated probabilities:  [0.21658012 0.27166148 0.2717599  0.23999851]
+
+Epoch  3
+Loss Discriminator:  0.6934
+Loss Generator:  [0.7021]
+Relative Entropy:  0.0417
+Real Relative Entropy:  0.1474
+----------------------
+
+Generator parameters:  [1.86530064e-04 8.86360857e-05 7.67327185e-02 6.16919265e-02
+ 1.71436225e-04 8.66752885e-05]
+Generated probabilities:  [0.21537632 0.28454228 0.28444919 0.21563222]
+
+Epoch  4
+Loss Discriminator:  0.6821
+Loss Generator:  [0.7902]
+Relative Entropy:  0.0303
+Real Relative Entropy:  0.125
+----------------------
+
+Generator parameters:  [0.00614641 0.00607088 0.10241092 0.08411895 0.00613724 0.00606955]
+Generated probabilities:  [0.19792365 0.29632785 0.2963143  0.2094342 ]
+
+Epoch  5
+Loss Discriminator:  0.6929
+Loss Generator:  [0.6823]
+Relative Entropy:  0.0188
+Real Relative Entropy:  0.0998
+----------------------
+
+Generator parameters:  [0.01214974 0.01207229 0.12491631 0.10034241 0.0121399  0.01207089]
+Generated probabilities:  [0.18309133 0.30562943 0.30571752 0.20556172]
+
+Epoch  6
+Loss Discriminator:  0.6942
+Loss Generator:  [0.7045]
+Relative Entropy:  0.0114
+Real Relative Entropy:  0.0813
+----------------------
+
+Generator parameters:  [0.00577086 0.00590001 0.14102958 0.11373049 0.00583146 0.005906  ]
+Generated probabilities:  [0.18167371 0.31286522 0.31306265 0.19239842]
+
+Epoch  7
+Loss Discriminator:  0.6932
+Loss Generator:  [0.6929]
+Relative Entropy:  0.0083
+Real Relative Entropy:  0.0718
+----------------------
+
+Generator parameters:  [-0.01265632 -0.01229248  0.16729384  0.13904966 -0.01251463 -0.01227815]
+Generated probabilities:  [0.18591025 0.32515191 0.32527118 0.16366666]
+
+Epoch  8
+Loss Discriminator:  0.7047
+Loss Generator:  [0.7458]
+Relative Entropy:  0.0082
+Real Relative Entropy:  0.0624
+----------------------
+
+Generator parameters:  [-0.01945566 -0.01869267  0.16252963  0.13219294 -0.01917339 -0.018662  ]
+Generated probabilities:  [0.19488642 0.32202158 0.32237071 0.16072129]
+
+Epoch  9
+Loss Discriminator:  0.6933
+Loss Generator:  [0.7299]
+Relative Entropy:  0.0116
+Real Relative Entropy:  0.0703
+----------------------
+
+Generator parameters:  [-0.02545246 -0.02469146  0.16871723  0.13038939 -0.02517107 -0.02466084]
+Generated probabilities:  [0.19949257 0.32286908 0.32299898 0.15463937]
+
+Epoch  10
+Loss Discriminator:  0.6917
+Loss Generator:  [0.7138]
+Relative Entropy:  0.0139
+Real Relative Entropy:  0.073
+----------------------
+
+Generator parameters:  [-0.01347572 -0.01270065  0.18422184  0.1424583  -0.01318849 -0.01266957]
+Generated probabilities:  [0.18149242 0.32983572 0.33021257 0.15845928]
+
+Epoch  11
+Loss Discriminator:  0.6908
+Loss Generator:  [0.7242]
+Relative Entropy:  0.0073
+Real Relative Entropy:  0.0565
+----------------------
+
+Generator parameters:  [-0.00749374 -0.00670769  0.20176792  0.15343791 -0.00720179 -0.00667623]
+Generated probabilities:  [0.1692364  0.33663498 0.33713827 0.15699035]
+
+Epoch  12
+Loss Discriminator:  0.6816
+Loss Generator:  [0.6331]
+Relative Entropy:  0.0044
+Real Relative Entropy:  0.0452
+----------------------
+
+Generator parameters:  [0.01647827 0.01728218 0.21403485 0.15981353 0.01677896 0.01731416]
+Generated probabilities:  [0.14439812 0.34032539 0.34157797 0.17369852]
+
+Epoch  13
+Loss Discriminator:  0.6916
+Loss Generator:  [0.6973]
+Relative Entropy:  0.0002
+Real Relative Entropy:  0.0322
+----------------------
+
+Generator parameters:  [0.03444811 0.03527065 0.20228508 0.14221311 0.03475714 0.03530325]
+Generated probabilities:  [0.13638885 0.33200239 0.33394122 0.19766754]
+
+Epoch  14
+Loss Discriminator:  0.6936
+Loss Generator:  [0.7193]
+Relative Entropy:  0.001
+Real Relative Entropy:  0.0381
+----------------------
+
+Generator parameters:  [0.01056598 0.01131514 0.23014061 0.16522704 0.01084085 0.01134532]
+Generated probabilities:  [0.1444609  0.34559315 0.34668416 0.16326179]
+
+Epoch  15
+Loss Discriminator:  0.6927
+Loss Generator:  [0.6959]
+Relative Entropy:  0.001
+Real Relative Entropy:  0.0287
+----------------------
+
+Generator parameters:  [0.01664692 0.01734576 0.25076842 0.16708687 0.01689831 0.01737424]
+Generated probabilities:  [0.13454023 0.35035469 0.35182825 0.16327682]
+
+Epoch  16
+Loss Discriminator:  0.6912
+Loss Generator:  [0.6251]
+Relative Entropy:  0.0013
+Real Relative Entropy:  0.0227
+----------------------
+
+Generator parameters:  [0.0286196  0.0293355  0.24548484 0.15549274 0.02887898 0.02936457]
+Generated probabilities:  [0.12876153 0.34545814 0.34763678 0.17814355]
+
+Epoch  17
+Loss Discriminator:  0.6921
+Loss Generator:  [0.7196]
+Relative Entropy:  0.0006
+Real Relative Entropy:  0.0246
+----------------------
+
+Generator parameters:  [0.01065465 0.01134857 0.26339781 0.17331276 0.01090357 0.01137688]
+Generated probabilities:  [0.13519656 0.35497895 0.35619751 0.15362698]
+
+Epoch  18
+Loss Discriminator:  0.6894
+Loss Generator:  [0.7094]
+Relative Entropy:  0.0028
+Real Relative Entropy:  0.0206
+----------------------
+
+Generator parameters:  [-0.00798322 -0.006923    0.2836047   0.19308313 -0.0075614  -0.00688162]
+Generated probabilities:  [0.14131365 0.36437469 0.36490897 0.12940268]
+
+Epoch  19
+Loss Discriminator:  0.6955
+Loss Generator:  [0.7063]
+Relative Entropy:  0.0096
+Real Relative Entropy:  0.0211
+----------------------
+
+Generator parameters:  [0.00386241 0.00502375 0.30212421 0.2119181  0.00433852 0.00506787]
+Generated probabilities:  [0.12348066 0.37226346 0.37353411 0.13072177]
+
+Epoch  20
+Loss Discriminator:  0.693
+Loss Generator:  [0.6968]
+Relative Entropy:  0.0116
+Real Relative Entropy:  0.0123
+----------------------
+
+Generator parameters:  [0.00381004 0.00500699 0.31945092 0.2287596  0.00430698 0.00505184]
+Generated probabilities:  [0.11622511 0.3796129  0.38091455 0.12324743]
+
+Epoch  21
+Loss Discriminator:  0.6906
+Loss Generator:  [0.617]
+Relative Entropy:  0.0168
+Real Relative Entropy:  0.0097
+----------------------
+
+Generator parameters:  [0.01584435 0.01701768 0.32536673 0.22891315 0.01632732 0.01706206]
+Generated probabilities:  [0.10603795 0.38022104 0.382235   0.13150602]
+
+Epoch  22
+Loss Discriminator:  0.6905
+Loss Generator:  [0.7086]
+Relative Entropy:  0.0165
+Real Relative Entropy:  0.0065
+----------------------
+
+Generator parameters:  [0.00987864 0.01102813 0.33705119 0.23491906 0.01034728 0.01107207]
+Generated probabilities:  [0.10679549 0.38433723 0.38601666 0.12285062]
+
+Epoch  23
+Loss Discriminator:  0.694
+Loss Generator:  [0.7026]
+Relative Entropy:  0.0203
+Real Relative Entropy:  0.0071
+----------------------
+
+Generator parameters:  [0.01006328 0.01108187 0.36270463 0.25570087 0.01044991 0.01112394]
+Generated probabilities:  [0.09740868 0.39397174 0.39559585 0.11302374]
+
+Epoch  24
+Loss Discriminator:  0.6907
+Loss Generator:  [0.6243]
+Relative Entropy:  0.03
+Real Relative Entropy:  0.0067
+----------------------
+
+Generator parameters:  [0.0339378  0.0350456  0.35714355 0.24415015 0.03438039 0.0350889 ]
+Generated probabilities:  [0.08449773 0.38814913 0.39156298 0.13579015]
+
+Epoch  25
+Loss Discriminator:  0.6918
+Loss Generator:  [0.7365]
+Relative Entropy:  0.0258
+Real Relative Entropy:  0.0039
+----------------------
+
+Generator parameters:  [0.02199245 0.02306065 0.36896011 0.25597742 0.02240946 0.02310349]
+Generated probabilities:  [0.08795705 0.39430823 0.39686    0.12087471]
+
+Epoch  26
+Loss Discriminator:  0.6924
+Loss Generator:  [0.713]
+Relative Entropy:  0.0308
+Real Relative Entropy:  0.0048
+----------------------
+
+Generator parameters:  [0.0339647  0.03505314 0.35729104 0.24418394 0.03439487 0.03509621]
+Generated probabilities:  [0.08445518 0.38819077 0.39159336 0.1357607 ]
+
+Epoch  27
+Loss Discriminator:  0.6915
+Loss Generator:  [0.6274]
+Relative Entropy:  0.0258
+Real Relative Entropy:  0.0039
+----------------------
+
+Generator parameters:  [0.03994634 0.04104799 0.35141005 0.23826275 0.04038486 0.04109122]
+Generated probabilities:  [0.08276404 0.38495485 0.38877952 0.14350159]
+
+Epoch  28
+Loss Discriminator:  0.6968
+Loss Generator:  [0.7189]
+Relative Entropy:  0.0239
+Real Relative Entropy:  0.0042
+----------------------
+
+Generator parameters:  [0.02200648 0.02306491 0.36917361 0.25607623 0.02241751 0.0231076 ]
+Generated probabilities:  [0.08789309 0.3943737  0.39692013 0.12081309]
+
+Epoch  29
+Loss Discriminator:  0.6914
+Loss Generator:  [0.7032]
+Relative Entropy:  0.0309
+Real Relative Entropy:  0.0048
+----------------------
+
+Generator parameters:  [0.00441939 0.00517678 0.38447564 0.271759   0.00463222 0.0052169 ]
+Generated probabilities:  [0.09405722 0.40197591 0.4030302  0.10093666]
+
+Epoch  30
+Loss Discriminator:  0.6933
+Loss Generator:  [0.6939]
+Relative Entropy:  0.0401
+Real Relative Entropy:  0.0095
+----------------------
+
+Generator parameters:  [0.01052251 0.01120296 0.40586587 0.28932729 0.01068322 0.01124259]
+Generated probabilities:  [0.082573   0.40924308 0.41070285 0.09748106]
+
+Epoch  31
+Loss Discriminator:  0.6799
+Loss Generator:  [0.6036]
+Relative Entropy:  0.0501
+Real Relative Entropy:  0.0108
+----------------------
+
+Generator parameters:  [0.01654278 0.01720778 0.41714766 0.29575526 0.0166927  0.01724735]
+Generated probabilities:  [0.07551415 0.41214425 0.41409641 0.09824519]
+
+Epoch  32
+Loss Discriminator:  0.7082
+Loss Generator:  [0.6234]
+Relative Entropy:  0.0548
+Real Relative Entropy:  0.0114
+----------------------
+
+Generator parameters:  [0.02852618 0.0292042  0.41113496 0.28391068 0.0286855  0.02924377]
+Generated probabilities:  [0.0712731  0.40748199 0.41047546 0.11076946]
+
+Epoch  33
+Loss Discriminator:  0.6951
+Loss Generator:  [0.7147]
+Relative Entropy:  0.0492
+Real Relative Entropy:  0.0084
+----------------------
+
+Generator parameters:  [0.01660477 0.01722222 0.42287751 0.29569845 0.01672122 0.01726168]
+Generated probabilities:  [0.07448957 0.41319707 0.41518033 0.09713303]
+
+Epoch  34
+Loss Discriminator:  0.6928
+Loss Generator:  [0.7025]
+Relative Entropy:  0.0566
+Real Relative Entropy:  0.012
+----------------------
+
+Generator parameters:  [0.01153739 0.01147975 0.42658528 0.29965882 0.01120198 0.01151813]
+Generated probabilities:  [0.07658555 0.41532774 0.41635012 0.09173658]
+
+Epoch  35
+Loss Discriminator:  0.6877
+Loss Generator:  [0.7853]
+Relative Entropy:  0.0594
+Real Relative Entropy:  0.0138
+----------------------
+
+Generator parameters:  [0.00550581 0.00547353 0.44463136 0.31746267 0.00518942 0.00551183]
+Generated probabilities:  [0.07397111 0.42229465 0.42284382 0.08089042]
+
+Epoch  36
+Loss Discriminator:  0.6863
+Loss Generator:  [0.6358]
+Relative Entropy:  0.0718
+Real Relative Entropy:  0.02
+----------------------
+
+Generator parameters:  [0.01739782 0.01745276 0.43633069 0.30683681 0.01714731 0.01749075]
+Generated probabilities:  [0.06993683 0.4179337  0.41955464 0.09257483]
+
+Epoch  37
+Loss Discriminator:  0.6831
+Loss Generator:  [0.6362]
+Relative Entropy:  0.0644
+Real Relative Entropy:  0.015
+----------------------
+
+Generator parameters:  [0.02937069 0.02944746 0.42460247 0.29500991 0.02913654 0.02948538]
+Generated probabilities:  [0.06681169 0.41228988 0.41491916 0.10597927]
+
+Epoch  38
+Loss Discriminator:  0.6866
+Loss Generator:  [0.5903]
+Relative Entropy:  0.0565
+Real Relative Entropy:  0.0109
+----------------------
+
+Generator parameters:  [0.04730991 0.04743369 0.40682236 0.27716416 0.0471091  0.04747167]
+Generated probabilities:  [0.06239044 0.40290536 0.40702851 0.12767569]
+
+Epoch  39
+Loss Discriminator:  0.6919
+Loss Generator:  [0.6663]
+Relative Entropy:  0.0474
+Real Relative Entropy:  0.0081
+----------------------
+
+Generator parameters:  [0.04123964 0.0414176  0.41304648 0.28332777 0.04107718 0.04145564]
+Generated probabilities:  [0.06377603 0.4062237  0.40990326 0.12009701]
+
+Epoch  40
+Loss Discriminator:  0.6907
+Loss Generator:  [0.6835]
+Relative Entropy:  0.0502
+Real Relative Entropy:  0.0086
+----------------------
+
+Generator parameters:  [0.05313743 0.05339293 0.4013238  0.27152905 0.05302845 0.05343124]
+Generated probabilities:  [0.06089368 0.39966725 0.40436413 0.13507494]
+
+Epoch  41
+Loss Discriminator:  0.6911
+Loss Generator:  [0.7682]
+Relative Entropy:  0.0452
+Real Relative Entropy:  0.0082
+----------------------
+
+Generator parameters:  [0.02917465 0.02940189 0.42525391 0.29547291 0.02904611 0.02944011]
+Generated probabilities:  [0.06667845 0.41245271 0.41518954 0.1056793 ]
+
+Epoch  42
+Loss Discriminator:  0.688
+Loss Generator:  [0.673]
+Relative Entropy:  0.0569
+Real Relative Entropy:  0.011
+----------------------
+
+Generator parameters:  [0.05906334 0.0593752  0.39557715 0.26570392 0.05899334 0.05941371]
+Generated probabilities:  [0.05947074 0.39625878 0.40147141 0.14279907]
+
+Epoch  43
+Loss Discriminator:  0.6954
+Loss Generator:  [0.6817]
+Relative Entropy:  0.0434
+Real Relative Entropy:  0.0087
+----------------------
+
+Generator parameters:  [0.05305968 0.05337445 0.40159816 0.27171694 0.05299176 0.05341295]
+Generated probabilities:  [0.06083991 0.39974046 0.40448145 0.13493818]
+
+Epoch  44
+Loss Discriminator:  0.6911
+Loss Generator:  [0.7642]
+Relative Entropy:  0.0454
+Real Relative Entropy:  0.0082
+----------------------
+
+Generator parameters:  [0.04097674 0.04135331 0.41379512 0.28386153 0.04095041 0.04139214]
+Generated probabilities:  [0.06363763 0.40641118 0.41023464 0.11971655]
+
+Epoch  45
+Loss Discriminator:  0.6919
+Loss Generator:  [0.7653]
+Relative Entropy:  0.0505
+Real Relative Entropy:  0.0087
+----------------------
+
+Generator parameters:  [0.01102006 0.0113629  0.44367578 0.31376704 0.01096951 0.01140172]
+Generated probabilities:  [0.07122086 0.42093386 0.42225631 0.08558896]
+
+Epoch  46
+Loss Discriminator:  0.7087
+Loss Generator:  [0.7523]
+Relative Entropy:  0.0696
+Real Relative Entropy:  0.0181
+----------------------
+
+Generator parameters:  [0.01092951 0.0113454  0.44471483 0.31449905 0.01093407 0.01138394]
+Generated probabilities:  [0.07093688 0.42123067 0.42260472 0.08522773]
+
+Epoch  47
+Loss Discriminator:  0.6884
+Loss Generator:  [0.7232]
+Relative Entropy:  0.0702
+Real Relative Entropy:  0.0183
+----------------------
+
+Generator parameters:  [0.01091111 0.01134294 0.46744803 0.3371909  0.01092883 0.01138132]
+Generated probabilities:  [0.06322858 0.42927881 0.43066792 0.07682469]
+
+Epoch  48
+Loss Discriminator:  0.6931
+Loss Generator:  [0.6498]
+Relative Entropy:  0.0862
+Real Relative Entropy:  0.0259
+----------------------
+
+Generator parameters:  [0.02888828 0.02933947 0.46702666 0.31962332 0.02892153 0.0293777 ]
+Generated probabilities:  [0.05604095 0.42420314 0.42745518 0.09230074]
+
+Epoch  49
+Loss Discriminator:  0.6931
+Loss Generator:  [0.6734]
+Relative Entropy:  0.0788
+Real Relative Entropy:  0.0205
+----------------------
+
+Generator parameters:  [0.02289652 0.02334148 0.4730984  0.32566533 0.02292549 0.02337971]
+Generated probabilities:  [0.05740803 0.42704556 0.429723   0.0858234 ]
+
+Epoch  50
+Loss Discriminator:  0.6901
+Loss Generator:  [0.6705]
+Relative Entropy:  0.0832
+Real Relative Entropy:  0.0231
+----------------------
+
+Generator parameters:  [0.03490382 0.0353433  0.46115452 0.31369338 0.03492903 0.03538155]
+Generated probabilities:  [0.0546456  0.42130051 0.42511269 0.09894119]
+
+Epoch  51
+Loss Discriminator:  0.6931
+Loss Generator:  [0.6766]
+Relative Entropy:  0.0747
+Real Relative Entropy:  0.0184
+----------------------
+
+Generator parameters:  [0.03488242 0.03533958 0.46124039 0.31375221 0.03492131 0.03537771]
+Generated probabilities:  [0.05462804 0.42132101 0.42514555 0.09890541]
+
+Epoch  52
+Loss Discriminator:  0.692
+Loss Generator:  [0.6746]
+Relative Entropy:  0.0747
+Real Relative Entropy:  0.0184
+----------------------
+
+Generator parameters:  [0.0290871  0.02937936 0.46680449 0.31940788 0.02900192 0.02941844]
+Generated probabilities:  [0.05606154 0.42417191 0.42731763 0.09244892]
+
+Epoch  53
+Loss Discriminator:  0.6911
+Loss Generator:  [0.6552]
+Relative Entropy:  0.0786
+Real Relative Entropy:  0.0204
+----------------------
+
+Generator parameters:  [0.0170786  0.01737853 0.47890184 0.33148066 0.01700014 0.01741743]
+Generated probabilities:  [0.05883726 0.42972449 0.43172986 0.07970839]
+
+Epoch  54
+Loss Discriminator:  0.6972
+Loss Generator:  [0.7305]
+Relative Entropy:  0.0878
+Real Relative Entropy:  0.026
+----------------------
+
+Generator parameters:  [0.01107562 0.01137891 0.49960882 0.34467927 0.01100075 0.01141774]
+Generated probabilities:  [0.05676858 0.4359559  0.4374425  0.06983302]
+
+Epoch  55
+Loss Discriminator:  0.6859
+Loss Generator:  [0.6187]
+Relative Entropy:  0.1012
+Real Relative Entropy:  0.0339
+----------------------
+
+Generator parameters:  [0.02752134 0.02891127 0.48398121 0.3288475  0.02817422 0.02893204]
+Generated probabilities:  [0.05239981 0.42842427 0.43246226 0.08671366]
+
+Epoch  56
+Loss Discriminator:  0.6926
+Loss Generator:  [0.6964]
+Relative Entropy:  0.0882
+Real Relative Entropy:  0.0254
+----------------------
+
+Generator parameters:  [0.03371347 0.03494635 0.47762645 0.32256716 0.03424613 0.03496825]
+Generated probabilities:  [0.05113615 0.42546679 0.42999906 0.093398  ]
+
+Epoch  57
+Loss Discriminator:  0.6921
+Loss Generator:  [0.7021]
+Relative Entropy:  0.0836
+Real Relative Entropy:  0.0228
+----------------------
+
+Generator parameters:  [0.00425597 0.00503451 0.50587272 0.35116583 0.00442915 0.00506044]
+Generated probabilities:  [0.0583641  0.43834783 0.43954438 0.06374369]
+
+Epoch  58
+Loss Discriminator:  0.6939
+Loss Generator:  [0.6963]
+Relative Entropy:  0.107
+Real Relative Entropy:  0.0381
+----------------------
+
+Generator parameters:  [0.02097143 0.02275778 0.49289634 0.33628643 0.02189352 0.022771  ]
+Generated probabilities:  [0.05322489 0.43180585 0.43552727 0.07944199]
+
+Epoch  59
+Loss Discriminator:  0.6931
+Loss Generator:  [0.6929]
+Relative Entropy:  0.0946
+Real Relative Entropy:  0.0292
+----------------------
+
+Generator parameters:  [0.01483955 0.01673153 0.49934379 0.34267404 0.01584198 0.01674298]
+Generated probabilities:  [0.05448941 0.4345504  0.43772749 0.07323271]
+
+Epoch  60
+Loss Discriminator:  0.6904
+Loss Generator:  [0.6212]
+Relative Entropy:  0.0999
+Real Relative Entropy:  0.0327
+----------------------
+
+Generator parameters:  [0.01491891 0.0167445  0.49921899 0.34255953 0.01586895 0.01675654]
+Generated probabilities:  [0.05450903 0.43453085 0.43766439 0.07329573]
+
+Epoch  61
+Loss Discriminator:  0.6942
+Loss Generator:  [0.6998]
+Relative Entropy:  0.0998
+Real Relative Entropy:  0.0327
+----------------------
+
+Generator parameters:  [0.02687054 0.02873727 0.48744826 0.33071411 0.02785369 0.02874892]
+Generated probabilities:  [0.05176372 0.42918878 0.43357566 0.08547183]
+
+Epoch  62
+Loss Discriminator:  0.6923
+Loss Generator:  [0.715]
+Relative Entropy:  0.0902
+Real Relative Entropy:  0.0265
+----------------------
+
+Generator parameters:  [0.01500211 0.01675832 0.49917397 0.34248699 0.01589758 0.01677095]
+Generated probabilities:  [0.05450881 0.43453228 0.43762066 0.07333824]
+
+Epoch  63
+Loss Discriminator:  0.6935
+Loss Generator:  [0.7048]
+Relative Entropy:  0.0998
+Real Relative Entropy:  0.0326
+----------------------
+
+Generator parameters:  [0.02137329 0.0228187  0.49231305 0.3357728  0.02202284 0.02283432]
+Generated probabilities:  [0.05330812 0.43172239 0.43522013 0.07974935]
+
+Epoch  64
+Loss Discriminator:  0.6919
+Loss Generator:  [0.7049]
+Relative Entropy:  0.0942
+Real Relative Entropy:  0.029
+----------------------
+
+Generator parameters:  [0.0150239  0.01676368 0.49952195 0.34276593 0.01590874 0.01677611]
+Generated probabilities:  [0.05440578 0.43464141 0.43771923 0.07323359]
+
+Epoch  65
+Loss Discriminator:  0.693
+Loss Generator:  [0.6871]
+Relative Entropy:  0.1
+Real Relative Entropy:  0.0328
+----------------------
+
+Generator parameters:  [0.03292564 0.03474984 0.48200474 0.32511518 0.03387937 0.03476141]
+Generated probabilities:  [0.05029859 0.42648521 0.43145365 0.09176256]
+
+Epoch  66
+Loss Discriminator:  0.6914
+Loss Generator:  [0.703]
+Relative Entropy:  0.0861
+Real Relative Entropy:  0.0242
+----------------------
+
+Generator parameters:  [0.01541927 0.01683688 0.49898393 0.34231906 0.01605848 0.01685174]
+Generated probabilities:  [0.05446679 0.43457647 0.43744055 0.07351619]
+
+Epoch  67
+Loss Discriminator:  0.6927
+Loss Generator:  [0.7057]
+Relative Entropy:  0.0996
+Real Relative Entropy:  0.0325
+----------------------
+
+Generator parameters:  [0.00926975 0.0108138  0.50565358 0.34884001 0.01001045 0.01082728]
+Generated probabilities:  [0.05569948 0.43724923 0.43957814 0.06747315]
+
+Epoch  68
+Loss Discriminator:  0.6776
+Loss Generator:  [0.772]
+Relative Entropy:  0.1054
+Real Relative Entropy:  0.0364
+----------------------
+
+Generator parameters:  [-0.01467278 -0.01317948  0.52366338  0.36116081 -0.01397503 -0.01316545]
+Generated probabilities:  [0.06442793 0.44331372 0.44305607 0.04920227]
+
+Epoch  69
+Loss Discriminator:  0.6889
+Loss Generator:  [0.6665]
+Relative Entropy:  0.1211
+Real Relative Entropy:  0.0498
+----------------------
+
+Generator parameters:  [-0.00264806 -0.00117724  0.54675288  0.38423263 -0.0019701  -0.00116298]
+Generated probabilities:  [0.05035686 0.45003971 0.45105623 0.0485472 ]
+
+Epoch  70
+Loss Discriminator:  0.6894
+Loss Generator:  [0.7482]
+Relative Entropy:  0.1386
+Real Relative Entropy:  0.0582
+----------------------
+
+Generator parameters:  [-0.00848496 -0.00716701  0.56402205  0.39739844 -0.00794693 -0.00715137]
+Generated probabilities:  [0.04890932 0.45479955 0.45503457 0.04125655]
+
+Epoch  71
+Loss Discriminator:  0.6986
+Loss Generator:  [0.7354]
+Relative Entropy:  0.1527
+Real Relative Entropy:  0.0683
+----------------------
+
+Generator parameters:  [-0.00287342 -0.0011902   0.5745093   0.40809479 -0.00199954 -0.0011778 ]
+Generated probabilities:  [0.04288841 0.4574144  0.45854899 0.0411482 ]
+
+Epoch  72
+Loss Discriminator:  0.6926
+Loss Generator:  [0.7243]
+Relative Entropy:  0.1614
+Real Relative Entropy:  0.0731
+----------------------
+
+Generator parameters:  [-0.00394134 -0.00717953  0.59114692  0.4246125  -0.00797338 -0.00716467]
+Generated probabilities:  [0.04063448 0.46371235 0.46110211 0.03455107]
+
+Epoch  73
+Loss Discriminator:  0.6922
+Loss Generator:  [0.7038]
+Relative Entropy:  0.1771
+Real Relative Entropy:  0.0843
+----------------------
+
+Generator parameters:  [-0.00066633 -0.0012002   0.61489669  0.44884323 -0.00202401 -0.00119013]
+Generated probabilities:  [0.03200927 0.46867579 0.46840813 0.03090681]
+
+Epoch  74
+Loss Discriminator:  0.6929
+Loss Generator:  [0.6836]
+Relative Entropy:  0.1988
+Real Relative Entropy:  0.0992
+----------------------
+
+Generator parameters:  [-0.01807164  0.01676325  0.62049132  0.45679776  0.015883    0.01676304]
+Generated probabilities:  [0.02640413 0.458122   0.48205779 0.03341607]
+
+Epoch  75
+Loss Discriminator:  0.6885
+Loss Generator:  [0.767]
+Relative Entropy:  0.2046
+Real Relative Entropy:  0.1048
+----------------------
+
+Generator parameters:  [-0.0359695   0.03474835  0.60296346  0.44100179  0.0338447   0.03474388]
+Generated probabilities:  [0.02629823 0.44161665 0.48985169 0.04223343]
+
+Epoch  76
+Loss Discriminator:  0.6911
+Loss Generator:  [0.7019]
+Relative Entropy:  0.1892
+Real Relative Entropy:  0.0953
+----------------------
+
+Generator parameters:  [-0.03233277  0.02879992  0.60838845  0.44607009  0.02796976  0.02880752]
+Generated probabilities:  [0.02658195 0.44636394 0.48800507 0.03904905]
+
+Epoch  77
+Loss Discriminator:  0.6903
+Loss Generator:  [0.7053]
+Relative Entropy:  0.194
+Real Relative Entropy:  0.0984
+----------------------
+
+Generator parameters:  [-0.01529688  0.01085015  0.62550492  0.46264649  0.01009584  0.01087118]
+Generated probabilities:  [0.02669717 0.462513   0.48033641 0.03045342]
+
+Epoch  78
+Loss Discriminator:  0.6884
+Loss Generator:  [0.771]
+Relative Entropy:  0.21
+Real Relative Entropy:  0.1085
+----------------------
+
+Generator parameters:  [-0.02122665  0.01684321  0.63343857  0.47756525  0.01607702  0.01686186]
+Generated probabilities:  [0.02296689 0.46093914 0.48700405 0.02908992]
+
+Epoch  79
+Loss Discriminator:  0.693
+Loss Generator:  [0.6876]
+Relative Entropy:  0.2207
+Real Relative Entropy:  0.1171
+----------------------
+
+Generator parameters:  [-0.03845513  0.03477709  0.61665735  0.46226543  0.03390737  0.03477563]
+Generated probabilities:  [0.02269418 0.44499486 0.49503277 0.03727819]
+
+Epoch  80
+Loss Discriminator:  0.6931
+Loss Generator:  [0.6914]
+Relative Entropy:  0.2057
+Real Relative Entropy:  0.1077
+----------------------
+
+Generator parameters:  [-0.03231896  0.0287624   0.62300558  0.46895715  0.02786835  0.02875602]
+Generated probabilities:  [0.02252785 0.45073811 0.4925619  0.03417214]
+
+Epoch  81
+Loss Discriminator:  0.6921
+Loss Generator:  [0.6792]
+Relative Entropy:  0.2117
+Real Relative Entropy:  0.1115
+----------------------
+
+Generator parameters:  [-0.03191609  0.02872824  0.62350744  0.46985301  0.02778056  0.02871152]
+Generated probabilities:  [0.02236642 0.45102674 0.49258846 0.03401837]
+
+Epoch  82
+Loss Discriminator:  0.6923
+Loss Generator:  [0.7274]
+Relative Entropy:  0.2124
+Real Relative Entropy:  0.1119
+----------------------
+
+Generator parameters:  [-0.02042638  0.01677591  0.63474494  0.48072209  0.01590569  0.01677464]
+Generated probabilities:  [0.02246688 0.46168933 0.48723246 0.02861133]
+
+Epoch  83
+Loss Discriminator:  0.6928
+Loss Generator:  [0.7024]
+Relative Entropy:  0.2228
+Real Relative Entropy:  0.1186
+----------------------
+
+Generator parameters:  [-0.00955664  0.00495582  0.65501309  0.50158419  0.00437706  0.00502179]
+Generated probabilities:  [0.02060901 0.47391046 0.483809   0.02167153]
+
+Epoch  84
+Loss Discriminator:  0.693
+Loss Generator:  [0.6863]
+Relative Entropy:  0.2427
+Real Relative Entropy:  0.1329
+----------------------
+
+Generator parameters:  [-0.00962459  0.00496565  0.66973817  0.5163977   0.0044044   0.00503553]
+Generated probabilities:  [0.01777275 0.4767475  0.48671488 0.01876488]
+
+Epoch  85
+Loss Discriminator:  0.6929
+Loss Generator:  [0.6858]
+Relative Entropy:  0.2567
+Real Relative Entropy:  0.1439
+----------------------
+
+Generator parameters:  [ 0.00818672 -0.01299207  0.67624164  0.5240681  -0.01346713 -0.012899  ]
+Generated probabilities:  [0.01964912 0.49035697 0.47553122 0.0144627 ]
+
+Epoch  86
+Loss Discriminator:  0.6929
+Loss Generator:  [0.7277]
+Relative Entropy:  0.264
+Real Relative Entropy:  0.1483
+----------------------
+
+Generator parameters:  [ 0.01430275 -0.01901452  0.66991154  0.51770886 -0.01953403 -0.01893281]
+Generated probabilities:  [0.02204706 0.4932872  0.47009704 0.01456869]
+
+Epoch  87
+Loss Discriminator:  0.6895
+Loss Generator:  [0.643]
+Relative Entropy:  0.2585
+Real Relative Entropy:  0.1435
+----------------------
+
+Generator parameters:  [-0.00962876  0.00497286  0.6978368   0.54549977  0.00442852  0.00504841]
+Generated probabilities:  [0.01285489 0.48170991 0.49171947 0.01371573]
+
+Epoch  88
+Loss Discriminator:  0.6909
+Loss Generator:  [0.6643]
+Relative Entropy:  0.2832
+Real Relative Entropy:  0.1652
+----------------------
+
+Generator parameters:  [-0.02163778  0.01697404  0.70271108  0.55483575  0.01643029  0.01704941]
+Generated probabilities:  [0.0100813  0.4743835  0.50112664 0.01440855]
+
+Epoch  89
+Loss Discriminator:  0.6929
+Loss Generator:  [0.6777]
+Relative Entropy:  0.2895
+Real Relative Entropy:  0.1716
+----------------------
+
+Generator parameters:  [-0.03955086  0.03495338  0.68507047  0.53747488  0.03436303  0.03501587]
+Generated probabilities:  [0.01011754 0.45881162 0.5103799  0.02069093]
+
+Epoch  90
+Loss Discriminator:  0.6937
+Loss Generator:  [0.6884]
+Relative Entropy:  0.2735
+Real Relative Entropy:  0.1606
+----------------------
+
+Generator parameters:  [-0.05159655  0.04696206  0.67302723  0.52542706  0.046388    0.04702886]
+Generated probabilities:  [0.01018369 0.4481056  0.51616304 0.02554767]
+
+Epoch  91
+Loss Discriminator:  0.6933
+Loss Generator:  [0.7021]
+Relative Entropy:  0.2626
+Real Relative Entropy:  0.1534
+----------------------
+
+Generator parameters:  [-0.04583676  0.04101074  0.67865716  0.5308861   0.04053257  0.04110304]
+Generated probabilities:  [0.01021409 0.45330102 0.51331797 0.02316692]
+
+Epoch  92
+Loss Discriminator:  0.6936
+Loss Generator:  [0.6982]
+Relative Entropy:  0.2676
+Real Relative Entropy:  0.1566
+----------------------
+
+Generator parameters:  [-0.04080106  0.03528715  0.68338651  0.53540073  0.0352235   0.03550584]
+Generated probabilities:  [0.0103399  0.45799914 0.51053634 0.02112463]
+
+Epoch  93
+Loss Discriminator:  0.6872
+Loss Generator:  [0.7829]
+Relative Entropy:  0.2718
+Real Relative Entropy:  0.1593
+----------------------
+
+Generator parameters:  [-0.02883167  0.02329392  0.69535997  0.54739148  0.02324434  0.02351646]
+Generated probabilities:  [0.0102738  0.46850249 0.50450861 0.0167151 ]
+
+Epoch  94
+Loss Discriminator:  0.6929
+Loss Generator:  [0.6743]
+Relative Entropy:  0.2827
+Real Relative Entropy:  0.1668
+----------------------
+
+Generator parameters:  [-0.02883875  0.02329534  0.69556695  0.54831845  0.02324819  0.02351848]
+Generated probabilities:  [0.01019243 0.46858793 0.50460493 0.0166147 ]
+
+Epoch  95
+Loss Discriminator:  0.6852
+Loss Generator:  [0.6054]
+Relative Entropy:  0.2833
+Real Relative Entropy:  0.1672
+----------------------
+
+Generator parameters:  [-0.04474119  0.04046241  0.68050228  0.53378421  0.03950407  0.04036465]
+Generated probabilities:  [0.00997014 0.45424952 0.51323683 0.02254351]
+
+Epoch  96
+Loss Discriminator:  0.6922
+Loss Generator:  [0.6865]
+Relative Entropy:  0.2698
+Real Relative Entropy:  0.1583
+----------------------
+
+Generator parameters:  [-0.05060816  0.0464283   0.67488457  0.52833756  0.04539668  0.0463095 ]
+Generated probabilities:  [0.00993913 0.44902896 0.51614139 0.02489052]
+
+Epoch  97
+Loss Discriminator:  0.6871
+Loss Generator:  [0.6314]
+Relative Entropy:  0.2648
+Real Relative Entropy:  0.1551
+----------------------
+
+Generator parameters:  [-0.05144154  0.04660546  0.67374383  0.52674269  0.04589934  0.04657482]
+Generated probabilities:  [0.01011386 0.44847919 0.51619551 0.02521144]
+
+Epoch  98
+Loss Discriminator:  0.6931
+Loss Generator:  [0.6939]
+Relative Entropy:  0.2636
+Real Relative Entropy:  0.1541
+----------------------
+
+Generator parameters:  [-0.04573159  0.04066604  0.67927852  0.5320673   0.04007921  0.04066749]
+Generated probabilities:  [0.01015893 0.45363001 0.51333919 0.02287187]
+
+Epoch  99
+Loss Discriminator:  0.693
+Loss Generator:  [0.6963]
+Relative Entropy:  0.2685
+Real Relative Entropy:  0.1573
+----------------------
+
+Generator parameters:  [-0.0637166   0.05866359  0.66130899  0.51413137  0.05807186  0.05866393]
+Generated probabilities:  [0.0102355  0.43744928 0.52169115 0.03062408]
+
+Epoch  100
+Loss Discriminator:  0.6976
+Loss Generator:  [0.6397]
+Relative Entropy:  0.2526
+Real Relative Entropy:  0.1471
+----------------------
+
+Stop operation received
+
+Stopping training...
+Training stopped
+
+Relative entropy: [0.0733, 0.0741, 0.0574, 0.0417, 0.0303, 0.0188, 0.0114, 0.0083, 0.0082, 0.0116, 0.0139, 0.0073, 0.0044, 0.0002, 0.001, 0.001, 0.0013, 0.0006, 0.0028, 0.0096, 0.0116, 0.0168, 0.0165, 0.0203, 0.03, 0.0258, 0.0308, 0.0258, 0.0239, 0.0309, 0.0401, 0.0501, 0.0548, 0.0492, 0.0566, 0.0594, 0.0718, 0.0644, 0.0565, 0.0474, 0.0502, 0.0452, 0.0569, 0.0434, 0.0454, 0.0505, 0.0696, 0.0702, 0.0862, 0.0788, 0.0832, 0.0747, 0.0747, 0.0786, 0.0878, 0.1012, 0.0882, 0.0836, 0.107, 0.0946, 0.0999, 0.0998, 0.0902, 0.0998, 0.0942, 0.1, 0.0861, 0.0996, 0.1054, 0.1211, 0.1386, 0.1527, 0.1614, 0.1771, 0.1988, 0.2046, 0.1892, 0.194, 0.21, 0.2207, 0.2057, 0.2117, 0.2124, 0.2228, 0.2427, 0.2567, 0.264, 0.2585, 0.2832, 0.2895, 0.2735, 0.2626, 0.2676, 0.2718, 0.2827, 0.2833, 0.2698, 0.2648, 0.2636, 0.2685, 0.2526]
+Real relative entropy: [0.2046, 0.2056, 0.1769, 0.1474, 0.125, 0.0998, 0.0813, 0.0718, 0.0624, 0.0703, 0.073, 0.0565, 0.0452, 0.0322, 0.0381, 0.0287, 0.0227, 0.0246, 0.0206, 0.0211, 0.0123, 0.0097, 0.0065, 0.0071, 0.0067, 0.0039, 0.0048, 0.0039, 0.0042, 0.0048, 0.0095, 0.0108, 0.0114, 0.0084, 0.012, 0.0138, 0.02, 0.015, 0.0109, 0.0081, 0.0086, 0.0082, 0.011, 0.0087, 0.0082, 0.0087, 0.0181, 0.0183, 0.0259, 0.0205, 0.0231, 0.0184, 0.0184, 0.0204, 0.026, 0.0339, 0.0254, 0.0228, 0.0381, 0.0292, 0.0327, 0.0327, 0.0265, 0.0326, 0.029, 0.0328, 0.0242, 0.0325, 0.0364, 0.0498, 0.0582, 0.0683, 0.0731, 0.0843, 0.0992, 0.1048, 0.0953, 0.0984, 0.1085, 0.1171, 0.1077, 0.1115, 0.1119, 0.1186, 0.1329, 0.1439, 0.1483, 0.1435, 0.1652, 0.1716, 0.1606, 0.1534, 0.1566, 0.1593, 0.1668, 0.1672, 0.1583, 0.1551, 0.1541, 0.1573, 0.1471]
+Data relative entropy: [0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317, 0.0317]
+Relative entropy graph operation received
+
+Real relative entropy graph operation received
+
+Data relative entropy graph operation received
+
+Cumulative distribution function graph operation received
+
+Histogram graph operation received
+
+Generator loss graph operation received
+
+Discriminator loss graph operation received
+
+
